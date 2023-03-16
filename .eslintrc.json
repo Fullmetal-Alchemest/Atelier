@@ -1,3 +1,8 @@
 {
-  "extends": "airbnb"
+  "extends": "airbnb",
+  "ignorePatterns": ["main.js"],
+  "env": {
+    "browser": true,
+    "node": true
+  }
 }

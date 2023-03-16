@@ -3,11 +3,15 @@ require('dotenv').config();
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 
+var SRC_DIR = path.join(__dirname, '/client/src');
+var DIST_DIR = path.join(__dirname, '/client/dist');
+
 module.exports = {
-  entry: path.join(__dirname, 'client/src', 'index.jsx'),
+  entry: path.join(SRC_DIR, 'index.jsx'),
   output: {
-    path: path.resolve(__dirname, 'client/dist'),
+    path: DIST_DIR,
   },
+  mode: 'development',
   module: {
     rules: [
       {
@@ -40,4 +44,24 @@ module.exports = {
       },
     }),
   ],
+  resolve: {
+    alias: {
+      'components': path.resolve(__dirname,
+        './client/src/components/'),
+      'actions': path.resolve(__dirname,
+        './client/src/actions/'),
+      'assets': path.resolve(__dirname,
+        './client/src/assets/'),
+      'lib': path.resolve(__dirname,
+        './client/src/lib/'),
+      'reducers': path.resolve(__dirname,
+        './client/src/reducers/'),
+      'fonts': path.resolve(__dirname,
+        './client/src/public/fonts/'),
+      'icons': path.resolve(__dirname,
+        './client/src/public/icons/'),
+      'images': path.resolve(__dirname,
+        './client/src/public/images/'),
+    }
+  }
 };
