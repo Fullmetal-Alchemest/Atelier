@@ -1,1 +1,1 @@
-# Atelier
+# Atelier: Q&A readme
