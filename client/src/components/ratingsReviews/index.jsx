@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
-function RatingsReviews() {
-  return <div>This is the ratings and reviews section</div>;
+function RatingsReviews(props) {
+  return (
+    <div>This is the ratings and reviews section</div>
+  );
 }
 
 export default RatingsReviews;
