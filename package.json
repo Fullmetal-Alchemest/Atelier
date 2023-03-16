@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack serve",
-    "build": "webpack --watch",
+    "build": "webpack",
     "test": "jest",
     "prepare": "husky install"
   },
