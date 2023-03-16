@@ -1,4 +1,5 @@
 import React from 'react';
+<<<<<<< HEAD
 import ProductOverview from './productOverview/index.jsx';
 import RatingsReviews from './ratingsReviews/index.jsx';
 import QuestionsAnswers from './questionsAnswers/index.jsx';
@@ -13,6 +14,14 @@ function App() {
       <RelatedItems />
     </div>
   );
+=======
+
+const App = (props) => {
+
+  return (
+    <div>Test</div>
+  )
+>>>>>>> copyOfMain
 }
 
 export default App;

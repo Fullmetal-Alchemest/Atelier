@@ -1,5 +1,12 @@
 {
   "extends": "airbnb",
+<<<<<<< HEAD
   "ignorePatterns": ["main.js"],
   "browser": true
+=======
+  "env": {
+    "browser": true,
+    "node": true
+  }
+>>>>>>> copyOfMain
 }
