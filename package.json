@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack serve",
-    "build": "webpack",
+    "build": "webpack --watch",
     "test": "jest",
     "prepare": "husky install"
   },
@@ -22,7 +22,8 @@
   "dependencies": {
     "dotenv": "^16.0.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5"
   },
   "devDependencies": {
     "@babel/core": "^7.21.3",
