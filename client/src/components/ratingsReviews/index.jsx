@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
-function RatingsReviews(props) {
+function RatingsReviews() {
   return (
     <div>This is the ratings and reviews section</div>
   );
