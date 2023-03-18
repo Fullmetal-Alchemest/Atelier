@@ -10,6 +10,7 @@ module.exports = {
   entry: path.join(SRC_DIR, 'index.jsx'),
   output: {
     path: DIST_DIR,
+    filename: 'bundle.js',
   },
   mode: 'development',
   module: {
@@ -36,7 +37,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Atelier',
+      template: './template.html',
     }),
     new webpack.DefinePlugin({
       'process.env': {
@@ -45,36 +46,37 @@ module.exports = {
     }),
   ],
   resolve: {
+    extensions: ['.js', '.jsx'],
     alias: {
-      components: path.resolve(
+      '@components': path.resolve(
         __dirname,
         './client/src/components/',
       ),
-      actions: path.resolve(
+      '@actions': path.resolve(
         __dirname,
         './client/src/actions/',
       ),
-      assets: path.resolve(
+      '@assets': path.resolve(
         __dirname,
         './client/src/assets/',
       ),
-      lib: path.resolve(
+      '@lib': path.resolve(
         __dirname,
         './client/src/lib/',
       ),
-      reducers: path.resolve(
+      '@reducers': path.resolve(
         __dirname,
         './client/src/reducers/',
       ),
-      fonts: path.resolve(
+      '@fonts': path.resolve(
         __dirname,
         './client/src/public/fonts/',
       ),
-      icons: path.resolve(
+      '@icons': path.resolve(
         __dirname,
         './client/src/public/icons/',
       ),
-      images: path.resolve(
+      '@images': path.resolve(
         __dirname,
         './client/src/public/images/',
       ),
