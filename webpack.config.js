@@ -3,13 +3,14 @@ require('dotenv').config();
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 
-var SRC_DIR = path.join(__dirname, '/client/src');
-var DIST_DIR = path.join(__dirname, '/client/dist');
+const SRC_DIR = path.join(__dirname, '/client/src');
+const DIST_DIR = path.join(__dirname, '/client/dist');
 
 module.exports = {
   entry: path.join(SRC_DIR, 'index.jsx'),
   output: {
     path: DIST_DIR,
+    filename: 'bundle.js',
   },
   mode: 'development',
   module: {
@@ -36,7 +37,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Atelier',
+      template: './template.html',
     }),
     new webpack.DefinePlugin({
       'process.env': {
@@ -45,23 +46,40 @@ module.exports = {
     }),
   ],
   resolve: {
+    extensions: ['.js', '.jsx'],
     alias: {
-      'components': path.resolve(__dirname,
-        './client/src/components/'),
-      'actions': path.resolve(__dirname,
-        './client/src/actions/'),
-      'assets': path.resolve(__dirname,
-        './client/src/assets/'),
-      'lib': path.resolve(__dirname,
-        './client/src/lib/'),
-      'reducers': path.resolve(__dirname,
-        './client/src/reducers/'),
-      'fonts': path.resolve(__dirname,
-        './client/src/public/fonts/'),
-      'icons': path.resolve(__dirname,
-        './client/src/public/icons/'),
-      'images': path.resolve(__dirname,
-        './client/src/public/images/'),
-    }
-  }
+      '@components': path.resolve(
+        __dirname,
+        './client/src/components/',
+      ),
+      '@actions': path.resolve(
+        __dirname,
+        './client/src/actions/',
+      ),
+      '@assets': path.resolve(
+        __dirname,
+        './client/src/assets/',
+      ),
+      '@lib': path.resolve(
+        __dirname,
+        './client/src/lib/',
+      ),
+      '@reducers': path.resolve(
+        __dirname,
+        './client/src/reducers/',
+      ),
+      '@fonts': path.resolve(
+        __dirname,
+        './client/src/public/fonts/',
+      ),
+      '@icons': path.resolve(
+        __dirname,
+        './client/src/public/icons/',
+      ),
+      '@images': path.resolve(
+        __dirname,
+        './client/src/public/images/',
+      ),
+    },
+  },
 };

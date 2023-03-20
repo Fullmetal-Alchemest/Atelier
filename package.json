@@ -2,7 +2,7 @@
   "name": "atelier",
   "version": "1.0.0",
   "description": "client-facing retail web-portal",
-  "main": "index.js",
+  "main": "client/dist/bundle.js",
   "scripts": {
     "dev": "webpack serve",
     "build": "webpack --watch",
@@ -38,6 +38,7 @@
     "babel-loader": "^9.1.2",
     "eslint": "^8.36.0",
     "eslint-config-airbnb": "^19.0.4",
+    "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-react": "^7.32.2",

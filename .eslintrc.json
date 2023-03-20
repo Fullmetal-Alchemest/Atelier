@@ -1,8 +1,25 @@
 {
   "extends": "airbnb",
-  "ignorePatterns": ["main.js"],
+  "ignorePatterns": ["bundle.js"],
   "env": {
     "browser": true,
     "node": true
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["@components", "./client/src/components"],
+          ["@actions", "./client/src/actions"],
+          ["@assets", "./client/src/assets"],
+          ["@lib", "./client/src/lib"],
+          ["@reducers", "./client/src/reducers"],
+          ["@fonts", "./client/src/public/fonts"],
+          ["@icons", "./client/src/public/icons"],
+          ["@images", "./client/src/public/images"]
+        ],
+        "extensions": [".js", ".jsx"]
+      }
+    }
   }
 }
