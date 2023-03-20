@@ -2,7 +2,7 @@
   "name": "atelier",
   "version": "1.0.0",
   "description": "client-facing retail web-portal",
-  "main": "index.js",
+  "main": "client/dist/bundle.js",
   "scripts": {
     "dev": "webpack serve",
     "build": "webpack --watch",
