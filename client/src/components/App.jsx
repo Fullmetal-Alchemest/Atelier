@@ -1,9 +1,9 @@
 import React from 'react';
 
-import ProductOverview from './productOverview/index.jsx';
-import RatingsReviews from './ratingsReviews/index.jsx';
-import QuestionsAnswers from './questionsAnswers/index.jsx';
-import RelatedItems from './relatedItems/index.jsx';
+import ProductOverview from './productOverview';
+import RatingsReviews from './ratingsReviews';
+import QuestionsAnswers from './questionsAnswers';
+import RelatedItems from './relatedItems';
 
 const appStyles = 'grid grid-flow-row auto-rows-max mx-auto w-0 min-w-max';
 

@@ -1,20 +1,12 @@
 {
   "extends": "airbnb",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-  "ignorePatterns": ["main.js", "tailwind.config.js"],
+  "ignorePatterns": ["bundle.js", "tailwind.config.js"],
   "no-param-reassign": ["error", {
     "props": true,
     "ignorePropertyModificationsFor": [
       "state"
     ]
   }],
->>>>>>> 49ce59b (Test commit 2, to practice submitting pull requests.)
-=======
-  "ignorePatterns": ["bundle.js"],
->>>>>>> main
   "env": {
     "browser": true,
     "node": true
@@ -23,16 +15,6 @@
     "import/resolver": {
       "alias": {
         "map": [
-<<<<<<< HEAD
-          ["Components", "./client/src/components"],
-          ["actions", "./client/src/actions"],
-          ["assets", "./client/src/assets"],
-          ["lib", "./client/src/lib"],
-          ["reducers", "./client/src/reducers"],
-          ["fonts", "./client/src/public/fonts"],
-          ["icons", "./client/src/public/icons"],
-          ["images", "./client/src/public/images"]
-=======
           ["@components", "./client/src/components"],
           ["@actions", "./client/src/actions"],
           ["@assets", "./client/src/assets"],
@@ -41,17 +23,9 @@
           ["@fonts", "./client/src/public/fonts"],
           ["@icons", "./client/src/public/icons"],
           ["@images", "./client/src/public/images"]
->>>>>>> main
         ],
         "extensions": [".js", ".jsx"]
       }
     }
   }
-<<<<<<< HEAD
-=======
-  "ignorePatterns": ["main.js"],
-  "browser": true
->>>>>>> 4d40ddc (Initial setup of Redux and folders for Product Overview)
-=======
->>>>>>> main
 }
