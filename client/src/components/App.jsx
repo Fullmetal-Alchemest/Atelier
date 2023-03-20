@@ -1,6 +1,7 @@
 import React from 'react';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 const App = (props) => {
@@ -22,11 +23,14 @@ function App() {
       <QuestionsAnswers />
       <RelatedItems />
 =======
+=======
+>>>>>>> main
 import ProductOverview from './productOverview/index';
 import RatingsReviews from './ratingsReviews/index';
 import QuestionsAnswers from './questionsAnswers/index';
 import RelatedItems from './relatedItems/index';
 
+<<<<<<< HEAD
 const appStyles = 'grid grid-flow-row auto-rows-max mx-auto w-0 min-w-max';
 
 function App() {
@@ -60,3 +64,18 @@ export default function App() {
   return <h1>Hello World!</h1>;
 }
 >>>>>>> bcd937e (created bare skeleton)
+=======
+function App() {
+  return (
+    <div>
+      test
+      <ProductOverview />
+      <RatingsReviews />
+      <QuestionsAnswers />
+      <RelatedItems />
+    </div>
+  );
+}
+
+export default App;
+>>>>>>> main
