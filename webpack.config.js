@@ -27,7 +27,8 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
+        include: path.resolve(__dirname, 'src/css'),
+        use: ['style-loader', 'css-loader', 'postcss-loader'],
       },
       {
         test: /\.(png|jp(e*)g|svg|gif)$/,
@@ -37,7 +38,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './template.html',
+      title: 'Atelier',
+      template: path.resolve(__dirname, '/templates/template.html'),
     }),
     new webpack.DefinePlugin({
       'process.env': {

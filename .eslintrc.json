@@ -1,6 +1,12 @@
 {
   "extends": "airbnb",
-  "ignorePatterns": ["bundle.js"],
+  "ignorePatterns": ["bundle.js", "tailwind.config.js"],
+  "no-param-reassign": ["error", {
+    "props": true,
+    "ignorePropertyModificationsFor": [
+      "state"
+    ]
+  }],
   "env": {
     "browser": true,
     "node": true
