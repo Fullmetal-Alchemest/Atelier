@@ -3,13 +3,13 @@
     "baseUrl": "./",
     "paths": {
       "@components/*": ["./client/src/components/*"],
-      "@actions/*": ["./client/src/actions/*"],
       "@assets/*": ["./client/src/assets/*"],
-      "@lib/*": ["./client/src/lib/*"],
       "@reducers/*": ["./client/src/reducers/*"],
-      "@fonts/*": ["./client/src/public/fonts/*"],
-      "@icons/*": ["./client/src/public/icons/*"],
-      "@images/*": ["./client/src/public/images/*"]
+      "@fonts/*": ["./client/src/assets/fonts/*"],
+      "@icons/*": ["./client/src/assets/icons/*"],
+      "@images/*": ["./client/src/assets/images/*"],
+      "@css/*": ["./client/src/css/*"],
+      "@store": ["./client/src/store/store.js"]
     },
   },
   "exclude": ["node_modules"]

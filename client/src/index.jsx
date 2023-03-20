@@ -1,10 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
 import { Provider } from 'react-redux';
-import store from '@lib/store.js';
-
-import App from '@components/App.jsx';
+import App from '@components/App';
+import store from '@store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
